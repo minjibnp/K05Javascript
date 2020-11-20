@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J15Event03.html</title>
+    <script>
+        //이벤트활용3 : window객체의 addEventListener를 이용한다.
+        window.addEventListener("load", function(){
+            alert("load이벤트활용3. 문서 로딩 완료임^^*");
+
+        var mydiv = document.getElementById("mydiv").innerHTML;
+        alert("mydiv의 내용="+mydiv);
+        });
+
+        /*
+        JS는 인터프리터 방식이므로 DOM이 등장하기 전에 해당 내용을
+        가져오면 에러가 발생하게 된다. 따라서 HTML문서의 로드가
+        끝난 이후 읽어올 수 있도록 함수로 정의하거나,
+        아예 문서 하단에 script를 기술해야 한다.
+        
+         var mydiv = document.getElementById("mydiv").innerHTML;
+        alert("mydiv의 내용="+mydiv);
+        */
+
+        function myFunc(){
+            
+        var mydiv = document.getElementById("mydiv").innerHTML;
+        alert("mydiv의 내용="+mydiv);
+
+        }
+
+    </script>
+</head>
+<body>
+    <h2 id="title">이벤트 - load(3)</h2>
+    
+    <script>
+        alert("문서가 끝나기 직전");
+    </script>
+
+    <div id="mydiv" onclick="myFunc();" style="cursor: pointer;">
+        여기는 div영역입니다.
+    </div>
+    <!-- div가 나온다음에 호출해야 DOM을 가져올 수 있다. 함수화하여 호출하면 위에서 선언한 후
+    불러올 수 있다. 함수화하지 않고 헤드영역에 두면 에러가 뜬다 -->
+
+    <script>
+        //DOM이 선언된 이후 이므로 여기에 기술해도 된다.
+    </script>
+</body>
+</html>

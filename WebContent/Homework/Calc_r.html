@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc_review</title>
+    <style>
+        table{
+            background-color: #DDDDDD; width: 400px; height: 400px;
+            border-radius: 20px; border-spacing: 5px; box-sizing: border-box;
+            border: none;
+        }
+        .calc>button{
+            background-color:#7B7B7B ; color: white;
+            font-size: 25px; width: 220px; box-sizing: border-box;
+            border-radius: 10px;
+        }
+        #result{
+            background-color: #70C738; border-radius: 8px;
+            text-align: right; font-size: 45px; padding-right: 15px;
+            padding-left: 15px; color: #373737; height: 90px; font-weight: bold;
+        }
+        th>button{
+            border-spacing: 5px; background-color: #373737;
+            color: white; width: 110px; border-radius: 10px; height: 60px;
+            font-size: 20px; border: none; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>계산기</h1>
+    <table>
+        <tr>
+            <th id="result" colspan="4">123+654</th>
+        </tr>
+        <tr>
+            <th class="calc" colspan="2"><button>BackSpace</button></th>
+            <th class="calc" colspan="2"><button>C</button></th>
+        </tr>
+        <tr>
+            <th><button type="button">1</button></th>
+            <th><button type="button">2</button></th>
+            <th><button type="button">3</button></th>
+            <th><button style="background-color: #fa960a;" type="button">/</button></th>
+        </tr>
+        <tr>
+            <th><button type="button">4</button></th>
+            <th><button type="button">5</button></th>
+            <th><button type="button">6</button></th>
+            <th><button style="background-color: #fa960a;" type="button">X</button></th>
+        </tr>
+        <tr>
+            <th><button type="button">7</button></th>
+            <th><button type="button">8</button></th>
+            <th><button type="button">9</button></th>
+            <th><button style="background-color: #fa960a;" type="button">+</button></th>
+        </tr>
+        <tr>
+            <th><button type="button">=</button></th>
+            <th><button type="button">0</button></th>
+            <th><button type="button">.</button></th>
+            <th><button style="background-color: #fa960a;" type="button">-</button></th>
+        </tr>
+    </table>
+    
+</body>
+</html>
